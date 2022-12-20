@@ -22,9 +22,19 @@ Systemutvecklare Redovisningsekonom Annat yrke
 
 ## Test level 2 : Tests of step 1
 
-1. Action-1 : Click on any profession
+1. Action-1 : Click on 'Annat yrke'
+#### _Results of action-2 should be_:
 
-#### _Results of action-1 should be_:
+- A text input field will be displayed with button to 'Gå vidare'
+
+2. Action-1 : Click on 'Gå vidare' without fill up text field
+#### _Results of action-2 should be_:
+
+- Border of text field will be filled with red color as sign of an error
+
+3. Action-2 : Click on any profession except 'Annat yrke'
+
+#### _Results of action-2 should be_:
 
 - Now step 1 will be hidden and step 2 will be active.
 - Moreover it will show 11 clickable options of expertis.
