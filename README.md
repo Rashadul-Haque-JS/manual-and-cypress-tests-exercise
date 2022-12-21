@@ -6,7 +6,7 @@
 
 #### _Results of action-1 should be_:
 
-- Only step 1 among others steps will be active with 3 options of profession. While others steps will be inactive and its content will be hidden.
+- Only step 1 among others steps will be active with 3 options of professions. While rest of steps will be inactive and its content should be hidden.
 
 <sub>Example:</sub>
 
@@ -19,22 +19,33 @@ Systemutvecklare Redovisningsekonom Annat yrke
 3 inactive
 4 inactive
 ` 
-
 ## Test level 2 : Tests of step 1
 
 1. Action-1 : Click on 'Annat yrke'
+
 #### _Results of action-2 should be_:
 
 - A text input field will be displayed with button to 'Gå vidare'
 
 2. Action-1 : Click on 'Gå vidare' without fill up text field
+
 #### _Results of action-2 should be_:
 
 - Border of text field will be filled with red color as sign of an error
+3. Action-3 : Fill up text field
+4. Action-3 : Click on 'Gå vidare' 
 
-3. Action-2 : Click on any profession except 'Annat yrke'
+#### _Results of action-4 should be_:
 
-#### _Results of action-2 should be_:
+-Now it should go to next step
+
+
+<!-- Back to step one to test it in another way -->
+
+6. Action-5 : Click on number 1 in step one
+7. Action-4 : Click on any profession except 'Annat yrke'
+
+#### _Results of action-7 should be_:
 
 - Now step 1 will be hidden and step 2 will be active.
 - Moreover it will show 11 clickable options of expertis.
@@ -155,3 +166,6 @@ For mobilnummer ,
 <sub>Example:</sub>
 
 `KLART!`
+
+
+### There are some API tests in level cypres testing
