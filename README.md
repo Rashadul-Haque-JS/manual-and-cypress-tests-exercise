@@ -18,12 +18,13 @@ Systemutvecklare Redovisningsekonom Annat yrke
 2 inactive
 3 inactive
 4 inactive
-` 
+`
+
 ## Test level 2 : Tests of step 1
 
 1. Action-1 : Click on 'Annat yrke'
 
-#### _Results of action-2 should be_:
+#### _Results of action-1 should be_:
 
 - A text input field will be displayed with button to 'Gå vidare'
 
@@ -32,13 +33,13 @@ Systemutvecklare Redovisningsekonom Annat yrke
 #### _Results of action-2 should be_:
 
 - Border of text field will be filled with red color as sign of an error
+
 3. Action-3 : Fill up text field
-4. Action-3 : Click on 'Gå vidare' 
+4. Action-3 : Click on 'Gå vidare'
 
 #### _Results of action-4 should be_:
 
 -Now it should go to next step
-
 
 <!-- Back to step one to test it in another way -->
 
@@ -62,7 +63,7 @@ Vilka är dina specialområden? (Flerval)
 <Gå vidare>
 `
 
-## Test level 3 : Tests of step 2 
+## Test level 3 : Tests of step 2
 
 1. Action-1 : Click on `Gå vidare` button without clicking on any expertis
 
@@ -76,7 +77,7 @@ Vilka är dina specialområden? (Flerval)
 
 2. Action-2 : Click on any expertis
 
-#### _Results of action-3 should be_:
+#### _Results of action-2 should be_:
 
 - Error message should be disappeared and expertis (clicked one) should have colored background
 
@@ -84,8 +85,6 @@ Vilka är dina specialområden? (Flerval)
 
 - Step 2 will be hidden and at the same time step 3 will be visible
 - Cirlce of step number 2 will be marked with tick symbol
-
-
 
 ## Test level 4 : Tests of step 3
 
@@ -129,7 +128,7 @@ For mobilnummer ,
 `Du måste fylla i ett mobilnummer
 Endast siffror tillåtna`
 
-2. Action-2: Fill up any one or two fields 
+2. Action-2: Fill up any one or two fields
 
 #### _Results of action-2 should be_:
 
@@ -140,7 +139,7 @@ Endast siffror tillåtna`
 `Du måste fylla i ett mobilnummer
 Endast siffror tillåtna`
 
-3. Action-3: Fill up e-post field with wrong format and mobilnummer with NaN value 
+3. Action-3: Fill up e-post field with wrong format and mobilnummer with NaN value
 
 #### _Results of action-2 should be_:
 
@@ -156,16 +155,15 @@ For mobilnummer ,
 
 `Endast siffror tillåtna`
 
-4. Action-4: Fill up all fields with correct format and values 
+4. Action-4: Fill up all fields with correct format and values
 
-#### _Results of action-2 should be_:
+#### _Results of action-4 should be_:
 
-- An confirm message will be displayed in white color 
+- An confirm message will be displayed in white color
 - Cirlce of step number 3 will be marked with tick symbol
 
 <sub>Example:</sub>
 
 `KLART!`
 
-
-### There are some API tests in level cypres testing
+### All the levels above along with some API tests have been tested using 'cypress'
